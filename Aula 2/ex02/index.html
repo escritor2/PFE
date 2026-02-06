@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de cartão de visita</title>
+</head>
+<body>
+    <h1>Gerador de Cartão de Visita</h1>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" oninput="atualizarCartao()"><br><br>
+
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" oninput="atualizarCartao()"><br><br>
+
+    <label for="cor">Cor do Cartão:</label>
+    <select id="cor" onchange="atualizarCartao()">
+        <option value="#f28b82">Vermelho</option>
+        <option value="#fbbc04">Laranja</option>
+        <option value="#fff475">Amarelo</option>
+        <option value="#ccff90">Verde</option>
+        <option value="#a7ffeb">Azul</option>
+    </select><br><br>
+
+    <div id="cartao" style="width:300px; height:150px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center; background-color:#f28b82;">
+        <h2 id="cartao-nome">Seu Nome</h2>
+        <p id="cartao-cargo">Seu Cargo</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
