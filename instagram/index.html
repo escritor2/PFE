@@ -1,0 +1,202 @@
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-content">
+            <h1 class="logo">Instagram</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <nav class="nav-icons">
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-user-circle"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Feed -->
+        <main class="feed">
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="/instagram/assets/img.png" alt="story">
+                    </div>
+                    <span>seu_perfil</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://i.pravatar.cc/150?u=2" alt="story">
+                    </div>
+                    <span>usuario1</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://i.pravatar.cc/150?u=3" alt="story">
+                    </div>
+                    <span>usuario2</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://i.pravatar.cc/150?u=4" alt="story">
+                    </div>
+                    <span>usuario3</span>
+                </div>
+            </div>
+
+            <!-- Post 1 - Imagem -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?u=5" alt="avatar">
+                        <span class="username">joao_silva</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-image">
+                    <img src="/instagram/assets/dia.png" alt="post">
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <div class="left-actions">
+                            <i class="far fa-heart like-btn"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <div class="post-info">
+                        <p class="likes"><span class="like-count">1245</span> curtidas</p>
+                        <p><strong>joao_silva</strong> Que dia lindo! 🌞</p>
+                        <span class="time">há 2 horas</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 2 - Vídeo -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?u=6" alt="avatar">
+                        <span class="username">maria_santos</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-image">
+                    <video autoplay muted loop>
+                        <source src="/instagram/assets/gato bombado.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <div class="left-actions">
+                            <i class="far fa-heart like-btn"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <div class="post-info">
+                        <p class="likes"><span class="like-count">856</span> curtidas</p>
+                        <p><strong>maria_santos</strong> Vídeo incrível! 🎥✨</p>
+                        <span class="time">há 4 horas</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 3 - Imagem -->
+            <article class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="https://i.pravatar.cc/150?u=7" alt="avatar">
+                        <span class="username">pedro_costa</span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="post-image">
+                    <img src="/instagram/assets/paisagem.png" alt="post">
+                </div>
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <div class="left-actions">
+                            <i class="far fa-heart like-btn"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <div class="post-info">
+                        <p class="likes"><span class="like-count">2103</span> curtidas</p>
+                        <p><strong>pedro_costa</strong> Momento perfeito! 📸</p>
+                        <span class="time">há 6 horas</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 4 - Imagem -->
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="user-profile">
+                <img src="/instagram/assets/img.png" alt="profile">
+                <div class="profile-info">
+                    <p class="profile-username">gabriel_silva</p>
+                    <p class="profile-name">gabriel</p>
+                </div>
+                <button class="switch-btn">Mudar</button>
+            </div>
+
+            <div class="suggestions">
+                <div class="suggestions-header">
+                    <span>Sugestões para você</span>
+                    <a href="#">Ver tudo</a>
+                </div>
+
+                <div class="suggestion-item">
+                    <img src="https://i.pravatar.cc/150?u=9" alt="user">
+                    <div class="suggestion-info">
+                        <p class="suggestion-username">carlos_tech</p>
+                        <p class="suggestion-status">Seguido por joao_silva</p>
+                    </div>
+                    <button class="follow-btn">Seguir</button>
+                </div>
+
+                <div class="suggestion-item">
+                    <img src="https://i.pravatar.cc/150?u=10" alt="user">
+                    <div class="suggestion-info">
+                        <p class="suggestion-username">julia_design</p>
+                        <p class="suggestion-status">Seguido por maria_santos</p>
+                    </div>
+                    <button class="follow-btn">Seguir</button>
+                </div>
+
+                <div class="suggestion-item">
+                    <img src="https://i.pravatar.cc/150?u=11" alt="user">
+                    <div class="suggestion-info">
+                        <p class="suggestion-username">lucas_photo</p>
+                        <p class="suggestion-status">Novo no Instagram</p>
+                    </div>
+                    <button class="follow-btn">Seguir</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
