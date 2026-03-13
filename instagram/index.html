@@ -31,29 +31,29 @@
         <main class="feed">
             <!-- Stories -->
             <div class="stories">
-                <div class="story">
+                <div class="story" data-story-img="/instagram/assets/img.png">
                     <div class="story-avatar">
                         <img src="/instagram/assets/img.png" alt="story">
                     </div>
                     <span>seu_perfil</span>
                 </div>
-                <div class="story">
+                <div class="story" data-story-img="/instagram/assets/morro.png">
                     <div class="story-avatar">
                         <img src="https://i.pravatar.cc/150?u=2" alt="story">
                     </div>
-                    <span>usuario1</span>
+                    <span>mario</span>
                 </div>
-                <div class="story">
+                <div class="story" data-story-img="/instagram/assets/paisagem.png">
                     <div class="story-avatar">
                         <img src="https://i.pravatar.cc/150?u=3" alt="story">
                     </div>
-                    <span>usuario2</span>
+                    <span>jessica</span>
                 </div>
-                <div class="story">
+                <div class="story" data-story-img="https://i.pravatar.cc/600?u=4">
                     <div class="story-avatar">
                         <img src="https://i.pravatar.cc/150?u=4" alt="story">
                     </div>
-                    <span>usuario3</span>
+                    <span>roberta</span>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                     <i class="fas fa-ellipsis-h"></i>
                 </div>
                 <div class="post-image">
-                    <img src="/instagram/assets/dia.png" alt="post">
+                    <img src="/instagram/assets/morro.png" alt="post">
                 </div>
                 <div class="post-footer">
                     <div class="post-actions">
@@ -111,7 +111,7 @@
                     </div>
                     <div class="post-info">
                         <p class="likes"><span class="like-count">856</span> curtidas</p>
-                        <p><strong>maria_santos</strong> Vídeo incrível! 🎥✨</p>
+                        <p><strong>maria_santos</strong> Vídeo gato bombado! 🎥✨</p>
                         <span class="time">há 4 horas</span>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                 <div class="post-header">
                     <div class="user-info">
                         <img src="https://i.pravatar.cc/150?u=7" alt="avatar">
-                        <span class="username">pedro_costa</span>
+                        <span class="username">Jheniffer_costa</span>
                     </div>
                     <i class="fas fa-ellipsis-h"></i>
                 </div>
@@ -195,6 +195,30 @@
                 </div>
             </div>
         </aside>
+    </div>
+
+    <!-- Story Viewer Modal -->
+    <div id="story-modal" class="modal">
+        <div class="modal-content story-content">
+            <span class="close-story">&times;</span>
+            <div class="story-header">
+                <img id="story-modal-avatar" src="" alt="">
+                <span id="story-modal-username"></span>
+            </div>
+            <div class="story-body">
+                <img id="story-modal-img" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Modal -->
+    <div id="comment-modal" class="modal">
+        <div class="modal-content comment-modal-content">
+            <span class="close-comment">&times;</span>
+            <h3>Adicionar comentário</h3>
+            <textarea id="comment-text" placeholder="Escreva seu comentário..."></textarea>
+            <button id="submit-comment">Enviar</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
