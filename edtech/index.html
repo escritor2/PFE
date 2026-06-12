@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard EdTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">EdTech School</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarConteudo" aria-controls="navbarConteudo" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarConteudo">
+          <form class="d-flex mx-auto w-50" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar alunos, cursos ou chamados" aria-label="Pesquisar">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+
+          <div class="d-flex align-items-center gap-3">
+            <span class="text-white d-none d-md-inline">Administrador</span>
+            <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center fw-bold p-2">A</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid pt-5">
+      <div class="row flex-nowrap">
+        <aside class="col-lg-2 bg-white border-end min-vh-100 p-3 d-none d-lg-block">
+          <div class="d-flex flex-column gap-2">
+            <a href="#" class="btn btn-primary text-start">Dashboard</a>
+            <a href="#" class="btn btn-outline-secondary text-start">Alunos</a>
+            <a href="#" class="btn btn-outline-secondary text-start">Cursos</a>
+            <a href="#" class="btn btn-outline-secondary text-start">Professores</a>
+            <a href="#" class="btn btn-outline-secondary text-start">Chamados</a>
+            <a href="#" class="btn btn-outline-secondary text-start mt-auto">Configurações</a>
+          </div>
+        </aside>
+
+        <main class="col-12 col-lg-10 p-3 p-md-4 p-lg-5">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+            <div>
+              <h1 class="h3 fw-bold mb-1">Dashboard da Escola</h1>
+              <p class="text-secondary mb-0">Acompanhe métricas, avisos e cadastros de alunos.</p>
+            </div>
+
+            <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#modalCadastroAluno">
+              Cadastrar Novo Aluno
+            </button>
+          </div>
+
+          <section class="row g-3 mb-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-bg-primary h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Total de Alunos Ativos</h5>
+                  <p class="display-6 fw-bold mb-0">1.248</p>
+                  <small class="opacity-75">Atualizado hoje</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-bg-success h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Cursos Publicados</h5>
+                  <p class="display-6 fw-bold mb-0">36</p>
+                  <small class="opacity-75">5 cursos em revisão</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-bg-warning h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Taxa de Retenção</h5>
+                  <p class="display-6 fw-bold mb-0">92%</p>
+                  <small class="text-dark opacity-75">Crescimento de 4% no mês</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card text-bg-danger h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Chamados Abertos</h5>
+                  <p class="display-6 fw-bold mb-0">18</p>
+                  <small class="opacity-75">4 com prioridade alta</small>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-4">
+            <div class="alert alert-warning d-flex align-items-center" role="alert">
+              <div class="fw-bold me-2">Atenção:</div>
+              Manutenção programada hoje às 23h. O acesso à plataforma poderá ficar indisponível por até 30 minutos.
+            </div>
+          </section>
+
+          <section class="card shadow-sm mb-4">
+            <div class="card-header bg-white d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+              <h2 class="h5 fw-bold mb-0">Alunos Recentes</h2>
+              <span class="badge text-bg-secondary">5 registros exibidos</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-striped table-hover mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Ana Souza</td>
+                    <td>Design UX</td>
+                    <td><span class="badge bg-success">Pago</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-primary">Editar</button>
+                      <button class="btn btn-sm btn-outline-danger">Remover</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1002</th>
+                    <td>Bruno Lima</td>
+                    <td>Front-end</td>
+                    <td><span class="badge bg-warning text-dark">Pendente</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-primary">Editar</button>
+                      <button class="btn btn-sm btn-outline-danger">Remover</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1003</th>
+                    <td>Carla Mendes</td>
+                    <td>Back-end</td>
+                    <td><span class="badge bg-success">Pago</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-primary">Editar</button>
+                      <button class="btn btn-sm btn-outline-danger">Remover</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1004</th>
+                    <td>Daniel Rocha</td>
+                    <td>Dados</td>
+                    <td><span class="badge bg-secondary">Inativo</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-primary">Editar</button>
+                      <button class="btn btn-sm btn-outline-danger">Remover</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1005</th>
+                    <td>Fernanda Alves</td>
+                    <td>Marketing Digital</td>
+                    <td><span class="badge bg-success">Pago</span></td>
+                    <td>
+                      <button class="btn btn-sm btn-outline-primary">Editar</button>
+                      <button class="btn btn-sm btn-outline-danger">Remover</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-footer bg-white">
+              <nav aria-label="Paginação de alunos">
+                <ul class="pagination justify-content-end mb-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Anterior">Anterior</a>
+                  </li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Próxima">Próxima</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalCadastroAluno" tabindex="-1" aria-labelledby="modalCadastroAlunoLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalCadastroAlunoLabel">Cadastrar Novo Aluno</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="formCadastro" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite o nome completo" required>
+                <div class="invalid-feedback">Informe o nome completo do aluno.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="cursoAluno" class="form-label">Curso</label>
+                <select class="form-select" id="cursoAluno" required>
+                  <option value="" selected>Selecione um curso</option>
+                  <option value="design-ux">Design UX</option>
+                  <option value="front-end">Front-end</option>
+                  <option value="back-end">Back-end</option>
+                  <option value="dados">Dados</option>
+                  <option value="marketing-digital">Marketing Digital</option>
+                </select>
+                <div class="invalid-feedback">Selecione um curso.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="fotoPerfil" class="form-label">Foto de Perfil</label>
+                <input class="form-control" type="file" id="fotoPerfil">
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="statusAtivo" checked>
+                <label class="form-check-label" for="statusAtivo">Aluno ativo após o cadastro</label>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" form="formCadastro" class="btn btn-primary">Salvar Aluno</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
