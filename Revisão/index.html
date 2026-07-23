@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Sensores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <div class="logo" aria-label="Logo"></div>
+            <h1>Dashboard de Sensores</h1>
+        </div>
+        <span class="status" id="connectionStatus">Online</span>
+    </header>
+
+    <main>
+        <section class="controls" aria-label="Filtros e Controles">
+            <button id="btnRefresh">Atualizar Dados</button>
+            <select id="filterType" aria-label="Filtrar sensores por tipo">
+                <option value="todos">Todos</option>
+                <option value="temperatura">Temperatura</option>
+                <option value="umidade">Umidade</option>
+                <option value="pressao">Pressão</option>
+            </select>
+        </section>
+
+        <section class="sensor-grid" id="sensorGrid" aria-label="Grid de Sensores"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dashboard de Sensores</p>
+        <p id="lastUpdate">Última atualização: --</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
